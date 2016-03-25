@@ -1,56 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>中国地图变色版</title>
-<link href="css/zzsc.css" media="screen" rel="stylesheet" type="text/css">
+<meta charset="gb2312">
+<title>星球旋转</title>
+
+<link href='planetarium.css' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="jquery.planetarium.js"></script>
+<script>
+  $(document).ready(function(){
+   $(".planet").planetarium({
+	  space: "html, body"
+	});
+	});
+	
+</script>
+
 </head>
 <body>
-<!-- 代码 开始 -->
-<div>
-	<dl id="gmap">
-		<dt><a id="title2" href="#nogo"></a></dt>
-		<dd><a id="xj" title="新疆" href="http://sc.chinaz.com/" target="_blank">新疆</a></dd>	
-		<dd><a id="xz" title="西藏" href="http://sc.chinaz.com/" target="_blank">西藏</a></dd>
-		<dd><a id="qh" title="青海" href="http://sc.chinaz.com/" target="_blank">青海</a></dd>		
-		<dd><a id="gs" title="甘肃" href="http://sc.chinaz.com/" target="_blank">甘肃</a></dd>
-		<dd><a id="lmg" title="内蒙古" href="http://sc.chinaz.com/" target="_blank">内蒙古</a></dd>
-		<dd><a id="hlj" title="黑龙江" href="http://sc.chinaz.com/" target="_blank">黑龙江</a></dd>	
-		<dd><a id="jl" title="吉林" href="http://sc.chinaz.com/" target="_blank">吉林</a></dd>
-		<dd><a id="ln" title="辽宁" href="http://sc.chinaz.com/" target="_blank">辽宁</a></dd>
-		<dd><a id="sd" title="山东" href="http://www.maitianquan.com/" target="_blank">山东</a></dd>
-		<dd><a id="hb" title="河北" href="http://www.zheye.cc/" target="_blank">河北</a></dd>
-		<dd><a id="sx" title="山西" href="http://sc.chinaz.com/" target="_blank">山西</a></dd>
-		<dd><a id="bj" title="北京" href="http://sc.chinaz.com/" target="_blank">北京</a></dd>
-		<dd><a id="tj" title="天津" href="http://sc.chinaz.com/" target="_blank">天津</a></dd>
-		<dd><a id="shx" title="陕西" href="http://sc.chinaz.com/" target="_blank">陕西</a></dd>		
-		<dd><a id="nx" title="宁夏" href="http://sc.chinaz.com/" target="_blank">宁夏</a></dd>	
-		<dd><a id="hn" title="河南" href="http://sc.chinaz.com/" target="_blank">河南</a></dd>	
-		<dd><a id="js" title="江苏" href="http://sc.chinaz.com/" target="_blank">江苏</a></dd>
-		<dd><a id="ah" title="安徽" href="http://sc.chinaz.com/" target="_blank">安徽</a></dd>
-		<dd><a id="sh" title="上海" href="http://sc.chinaz.com/" target="_blank">上海</a></dd>
-		<dd><a id="zj" title="浙江" href="http://sc.chinaz.com/" target="_blank">浙江</a></dd>	
-		<dd><a id="jx" title="江西" href="http://sc.chinaz.com/" target="_blank">江西</a></dd>
-		<dd><a id="hj" title="福建" href="http://sc.chinaz.com/" target="_blank">福建</a></dd>
-		<dd><a id="gd" title="广东" href="http://www.ivsky.com/" target="_blank">广东</a></dd>
-		<dd><a id="hl" title="海南" href="http://sc.chinaz.com/" target="_blank">海南</a></dd>
-		<dd><a id="gx" title="广西" href="http://sc.chinaz.com/" target="_blank">广西</a></dd>	
-		<dd><a id="gz" title="贵州" href="http://sc.chinaz.com/" target="_blank">贵州</a></dd>
-		<dd><a id="yn" title="云南" href="http://sc.chinaz.com/" target="_blank">云南</a></dd>	
-		<dd><a id="sc" title="四川" href="http://sc.chinaz.com/" target="_blank">四川</a></dd>
-		<dd><a id="cq" title="重庆" href="http://sc.chinaz.com/" target="_blank">重庆</a></dd>
-		<dd><a id="hun" title="湖南" href="http://sc.chinaz.com/" target="_blank">湖南</a></dd>		
-		<dd><a id="hub" title="湖北" href="http://sc.chinaz.com/" target="_blank">湖北</a></dd>
-		<dd><a id="tw" title="台湾" href="http://sc.chinaz.com/" target="_blank">台湾</a></dd>
-		<!--<dd><a id="xg" title="香港" href="http://sc.chinaz.com/" target="_blank">香港</a></dd>
-		<dd><a id="am" title="澳门" href="http://sc.chinaz.com/" target="_blank">澳门</a></dd>	
-		-->		
-	</dl>
+
+<div class="wrapper">	
+	<div class="main">
+		<div data-ptr-size="200x200" data-ptr-pattern="texture-saturn.jpg" data-ptr-ring="true" class="saturn planet"></div>
+		<div data-ptr-autospin="5000ms" data-ptr-angle="20deg" data-ptr-glow="0 0 50px rgba(0,252,255,0.35), inset 33px 20px 50px rgba(0,0,0,0.5)" data-ptr-size="300x300" data-ptr-pattern="texture-earth.jpg" class="earth planet"></div>
+		<div data-ptr-autospin="600ms" data-ptr-angle="40deg" data-ptr-glow="0 0 50px rgba(236,206,20,0.35), inset 33px 20px 50px rgba(0,0,0,0.5)" data-ptr-size="150x150" data-ptr-pattern="texture-jupiter.jpg" class="jupiter planet"></div>
+	</div>
 </div>
-<!-- 代码 结束 -->
-<div style="text-align:center;margin:50px 0">
-<div style="text-align:center;clear:both">
-</div>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff">
+
 </div>
 </body>
 </html>
