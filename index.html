@@ -1,122 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        body {
-            background: #060e1b;
-            overflow: hidden;
-        }
-
-        canvas {
-        //opacity: 0.5;
-        }
-    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>中国地图变色版</title>
+<link href="css/zzsc.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 <body>
-<canvas id="canvas"></canvas>
-<script>
-    "use strict";
-
-    var canvas = document.getElementById('canvas'),
-            ctx = canvas.getContext('2d'),
-            w = canvas.width = window.innerWidth,
-            h = canvas.height = window.innerHeight,
-
-            hue = 217,
-            stars = [],
-            count = 0,
-            maxStars = 1200;
-
-    var canvas2 = document.createElement('canvas'),
-            ctx2 = canvas2.getContext('2d');
-    canvas2.width = 100;
-    canvas2.height = 100;
-    var half = canvas2.width / 2,
-            gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
-    gradient2.addColorStop(0.025, '#fff');
-    gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
-    gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
-    gradient2.addColorStop(1, 'transparent');
-
-    ctx2.fillStyle = gradient2;
-    ctx2.beginPath();
-    ctx2.arc(half, half, half, 0, Math.PI * 2);
-    ctx2.fill();
-
-    // End cache
-
-    function random(min, max) {
-        if (arguments.length < 2) {
-            max = min;
-            min = 0;
-        }
-
-        if (min > max) {
-            var hold = max;
-            max = min;
-            min = hold;
-        }
-
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    function maxOrbit(x, y) {
-        var max = Math.max(x, y),
-                diameter = Math.round(Math.sqrt(max * max + max * max));
-        return diameter / 2;
-    }
-
-    var Star = function() {
-
-        this.orbitRadius = random(maxOrbit(w, h));
-        this.radius = random(60, this.orbitRadius) / 12;
-        this.orbitX = w / 2;
-        this.orbitY = h / 2;
-        this.timePassed = random(0, maxStars);
-        this.speed = random(this.orbitRadius) / 50000;
-        this.alpha = random(2, 10) / 10;
-
-        count++;
-        stars[count] = this;
-    }
-
-    Star.prototype.draw = function() {
-        var x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
-                y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
-                twinkle = random(10);
-
-        if (twinkle === 1 && this.alpha > 0) {
-            this.alpha -= 0.05;
-        } else if (twinkle === 2 && this.alpha < 1) {
-            this.alpha += 0.05;
-        }
-
-        ctx.globalAlpha = this.alpha;
-        ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
-        this.timePassed += this.speed;
-    }
-
-    for (var i = 0; i < maxStars; i++) {
-        new Star();
-    }
-
-    function animation() {
-        ctx.globalCompositeOperation = 'source-over';
-        ctx.globalAlpha = 0.8;
-        ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
-        ctx.fillRect(0, 0, w, h)
-
-        ctx.globalCompositeOperation = 'lighter';
-        for (var i = 1, l = stars.length; i < l; i++) {
-            stars[i].draw();
-        };
-
-        window.requestAnimationFrame(animation);
-    }
-
-    animation();
-</script>
+<!-- 代码 开始 -->
+<div>
+	<dl id="gmap">
+		<dt><a id="title2" href="#nogo"></a></dt>
+		<dd><a id="xj" title="新疆" href="http://sc.chinaz.com/" target="_blank">新疆</a></dd>	
+		<dd><a id="xz" title="西藏" href="http://sc.chinaz.com/" target="_blank">西藏</a></dd>
+		<dd><a id="qh" title="青海" href="http://sc.chinaz.com/" target="_blank">青海</a></dd>		
+		<dd><a id="gs" title="甘肃" href="http://sc.chinaz.com/" target="_blank">甘肃</a></dd>
+		<dd><a id="lmg" title="内蒙古" href="http://sc.chinaz.com/" target="_blank">内蒙古</a></dd>
+		<dd><a id="hlj" title="黑龙江" href="http://sc.chinaz.com/" target="_blank">黑龙江</a></dd>	
+		<dd><a id="jl" title="吉林" href="http://sc.chinaz.com/" target="_blank">吉林</a></dd>
+		<dd><a id="ln" title="辽宁" href="http://sc.chinaz.com/" target="_blank">辽宁</a></dd>
+		<dd><a id="sd" title="山东" href="http://www.maitianquan.com/" target="_blank">山东</a></dd>
+		<dd><a id="hb" title="河北" href="http://www.zheye.cc/" target="_blank">河北</a></dd>
+		<dd><a id="sx" title="山西" href="http://sc.chinaz.com/" target="_blank">山西</a></dd>
+		<dd><a id="bj" title="北京" href="http://sc.chinaz.com/" target="_blank">北京</a></dd>
+		<dd><a id="tj" title="天津" href="http://sc.chinaz.com/" target="_blank">天津</a></dd>
+		<dd><a id="shx" title="陕西" href="http://sc.chinaz.com/" target="_blank">陕西</a></dd>		
+		<dd><a id="nx" title="宁夏" href="http://sc.chinaz.com/" target="_blank">宁夏</a></dd>	
+		<dd><a id="hn" title="河南" href="http://sc.chinaz.com/" target="_blank">河南</a></dd>	
+		<dd><a id="js" title="江苏" href="http://sc.chinaz.com/" target="_blank">江苏</a></dd>
+		<dd><a id="ah" title="安徽" href="http://sc.chinaz.com/" target="_blank">安徽</a></dd>
+		<dd><a id="sh" title="上海" href="http://sc.chinaz.com/" target="_blank">上海</a></dd>
+		<dd><a id="zj" title="浙江" href="http://sc.chinaz.com/" target="_blank">浙江</a></dd>	
+		<dd><a id="jx" title="江西" href="http://sc.chinaz.com/" target="_blank">江西</a></dd>
+		<dd><a id="hj" title="福建" href="http://sc.chinaz.com/" target="_blank">福建</a></dd>
+		<dd><a id="gd" title="广东" href="http://www.ivsky.com/" target="_blank">广东</a></dd>
+		<dd><a id="hl" title="海南" href="http://sc.chinaz.com/" target="_blank">海南</a></dd>
+		<dd><a id="gx" title="广西" href="http://sc.chinaz.com/" target="_blank">广西</a></dd>	
+		<dd><a id="gz" title="贵州" href="http://sc.chinaz.com/" target="_blank">贵州</a></dd>
+		<dd><a id="yn" title="云南" href="http://sc.chinaz.com/" target="_blank">云南</a></dd>	
+		<dd><a id="sc" title="四川" href="http://sc.chinaz.com/" target="_blank">四川</a></dd>
+		<dd><a id="cq" title="重庆" href="http://sc.chinaz.com/" target="_blank">重庆</a></dd>
+		<dd><a id="hun" title="湖南" href="http://sc.chinaz.com/" target="_blank">湖南</a></dd>		
+		<dd><a id="hub" title="湖北" href="http://sc.chinaz.com/" target="_blank">湖北</a></dd>
+		<dd><a id="tw" title="台湾" href="http://sc.chinaz.com/" target="_blank">台湾</a></dd>
+		<!--<dd><a id="xg" title="香港" href="http://sc.chinaz.com/" target="_blank">香港</a></dd>
+		<dd><a id="am" title="澳门" href="http://sc.chinaz.com/" target="_blank">澳门</a></dd>	
+		-->		
+	</dl>
+</div>
+<!-- 代码 结束 -->
+<div style="text-align:center;margin:50px 0">
+<div style="text-align:center;clear:both">
+</div>
+</div>
 </body>
 </html>
