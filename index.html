@@ -1,197 +1,718 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
 <head>
+<title>dragon</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>人物头像跟随鼠标转动效果</title>
-<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css" media="screen">
-<link rel="stylesheet" type="text/css" href="css/team.css" media="screen">
-<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="js/lateral-eye.js"></script>
-<script type="text/javascript" src="js/jquerytools.js"></script>
-<script type="text/javascript" src="js/jquery.jkey-1.1.js"></script>
-<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<meta name="keywords" content="My Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--mobile apps-->
+<!--Custom Theme files-->
+<link rel="shortcut icon" href="images/your_ico.ico" type="image/x-icon">
+<link rel="icon" href="images/your_ico.ico" type="image/x-icon">
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/swipebox.css">
+<!--//Custom Theme files-->
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!--web-fonts-->
+<!--<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
+<!--<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
+<!--//web-fonts-->
+<!--start-smooth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smooth-scrolling-->
 </head>
 <body>
-<div id="wrapper" class="wrapslide1 lateralSlide ">
-  <div class="container">
-    <h1 class="page-title">A passionate team</h1>
-    <ul class="the-team clearfix">
-      <li>
-        <figure id="eye_andor_baranyi" class="eye">Andor</figure>
-        <strong class="tooltip">Andor Baranyi<small>Development</small></strong> <strong class="name">Andor</strong> </li>
-      <li>
-        <figure id="eye_angela_borsan" class="eye">Angela</figure>
-        <strong class="tooltip">Angela Bor&#537;an<small>Finance</small></strong> <strong class="name">Angela</strong> </li>
-      <li>
-        <figure id="eye_attila_szasz" class="eye">Attila</figure>
-        <strong class="tooltip">Attila Szász<small>Development</small></strong> <strong class="name">Attila</strong> </li>
-      <li>
-        <figure id="eye_bogdan_haifa" class="eye">Bogdan</figure>
-        <strong class="tooltip">Bogdan Haifa<small>Development</small></strong> <strong class="name">Bogdan</strong> </li>
-      <li>
-        <figure id="eye_bogdan_sala" class="eye">Bogdan</figure>
-        <strong class="tooltip">Bogdan Sala<small>Development</small></strong> <strong class="name">Bogdan</strong> </li>
-      <li>
-        <figure id="eye_bogdan_stanescu" class="eye">Bogdan</figure>
-        <strong class="tooltip">Bogdan St&#259;nescu<small>Development</small></strong> <strong class="name">Bogdan</strong> </li>
-      <li>
-        <figure id="eye_bogus" class="eye">Bogus</figure>
-        <strong class="tooltip">Bogus<small>Special Projects</small></strong> <strong class="name">Bogus</strong> </li>
-      <li>
-        <figure id="eye_botond_raduly" class="eye">Botond</figure>
-        <strong class="tooltip">Botond Raduly<small>Development</small></strong> <strong class="name">Botond</strong> </li>
-      <li>
-        <figure id="eye_calin_tritean" class="eye">C&#259;lin</figure>
-        <strong class="tooltip">C&#259;lin Tritean<small>Development</small></strong> <strong class="name">C&#259;lin</strong> </li>
-      <li>
-        <figure id="eye_ciprian_herman" class="eye">Ciprian</figure>
-        <strong class="tooltip">Ciprian Herman<small>Development</small></strong> <strong class="name">Ciprian</strong> </li>
-      <li>
-        <figure id="eye_ciprian_morar" class="eye">Ciprian</figure>
-        <strong class="tooltip">Ciprian Morar<small>Leadership</small></strong> <strong class="name">Ciprian</strong> </li>
-      <!-- <li>
+	<!--banner-->
+	<div id="home" class="banner">
+		<div class="banner-info">
+			<div class="container">
+				<div class="col-md-4 header-left">
+					<img src="images/img1.jpg" alt=""/>
+				</div>
+				<div class="col-md-8 header-right">
+					<h2>Hello</h2>
+					<h1>My name is Fanqinglong</h1>
+					<h6>前端工程师</h6>
+					<ul class="address">
+						<li>
+							<ul class="address-text">
+								<li><b>出生日期</b></li>
+								<li>09-28-1989</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>联系电话 </b></li>
+								<li><a href="tel:16601116686">16601116686</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>居住地址 </b></li>
+								<li>北京海淀区</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>个人邮箱 </b></li>
+								<li><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=279364752@qq.com" target="_blank">279364752@qq.com</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>个人博客</b></li>
+								<li><a href="https://www.cnblogs.com/webdragon/" target="_blank">https://www.cnblogs.com/webdragon</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>gitHub </b></li>
+								<li><a href="https://fanqinglong.github.io/" target="_blank">https://fanqinglong.github.io</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--top-nav-->
+	<div class="top-nav wow">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					导航
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="menu">
+					<ul class="nav navbar">
+						<li><a href="#work" class="scroll">个人经历</a></li>
+						<li><a href="#skills" class="scroll">专业技能</a></li>
+						<li><a href="#projects" class="scroll">部分作品</a></li>
+						<li><a href="#education" class="scroll">教育背景</a></li>
+						<li><a href="#about" class="scroll">关于我</a></li>
 
-<figure id="eye_cristian_ban" class="eye">Cristian</figure>
-<strong class="tooltip">Cristian Ban<small>Development</small></strong>
-<strong class="name">Cristian</strong>
+						<li><a href="#contact" class="scroll">联系我</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//top-nav-->
 
-</li> -->
-      <!--
-<li>
+	<!--work-experience-->
+	<div id="work" class="work">
+		<div class="container">
+			<h3 class="title">个人经历</h3>
+			<div class="work-info">
+				<div class="col-md-6 work-left">
+					<h4>2018/11 - 至今 </h4>
+				</div>
+				<div class="col-md-6 work-right">
+					<h5><span class="glyphicon glyphicon-briefcase"> </span> 北京悦维联动网络科技有限公司</h5>
+					<p>工作地点：金苑大厦</p>
+					<p>经营范围:技术推广服务；计算机系统服务；基础软件服务；应用软件服务（不含医用软件）；软件开发；产品设计；模型设计；包装装潢设计；经济贸易咨询；公共关系服务；会议服务；工艺美术设计；电脑图文设计、制作；企业策划；设计、制作、代理、发布广告；市场调查；企业管理咨询；企业策划、经济贸易咨询；组织文化艺术交流活动（不含演出）；文艺创作；承办展览展示活动；翻译服务；自然科学研究；工程和技术研究；农业科学研究；医学研究（不含诊疗活动）；数据处理（数据处理中的银行卡中心、PUE值在1.5以上的云计算数据中心除外）；销售计算机、软件及辅助设备、日用品、服装、鞋帽、文具用品、电子产品、工艺品。（企业依法自主选择经营项目，开展经营活动；依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事本市产业政策禁止和限制类项目的经营活动。 </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!--<div class="work-info"> -->
+				<!--<div class="col-md-6 work-right work-right2"> -->
+					<!--<h4>2017/11—2018/11  </h4>-->
+				<!--</div>-->
+				<!--<div class="col-md-6 work-left work-left2"> -->
+					<!--<h5>北京炎黄新星网络科技有限公司<span class="glyphicon glyphicon-briefcase"> </span></h5>-->
+					<!--<p>地点：中国联通大厦</p>-->
+					<!--<p>经营范围：开发计算机软硬件及外围设备、办公设备；软件开发；承接计算机网络工程；提供相关技术开发、技术培训、技术转让；销售自产产品。（企业依法自主选择经营项目，开展经营活动；依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事本市产业政策禁止和限制类项目的经营活动。）</p>-->
+				<!--</div>-->
+				<!--<div class="clearfix"> </div>-->
+			<!--</div>-->
+			<div class="work-info">
+				<div class="col-md-6 work-left">
+					<h4>2016/11—2018.11</h4>
+				</div>
+				<div class="col-md-6 work-right">
+					<h5><span class="glyphicon glyphicon-briefcase"> </span> 联通时科（北京）信息技术有限公司</h5>
+					<p>工作地点：中国联通大厦</p>
+					<p>经营范围：第二类增值电信业务中的信息服务业务（不含固定电话信息服务）（增值电信业务经营许可证有效期至2019年01月23日）（依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动。）</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info">
+				<div class="col-md-6 work-right work-right2">
+					<h4>2014/7—2016/11</h4>
+				</div>
+				<div class="col-md-6 work-left work-left2">
+					<h5> 北京宇电橙红信息技术有限公司<span class="glyphicon glyphicon-briefcase"></span> </h5>
+					<p> 工作地点：国旅大厦</p>
+					<p>经营范围：技术开发、技术推广、技术转让、技术咨询、技术服务；销售计算机、软件及辅助设备、电子产品；软件开发；计算机系统服务；经济贸易咨询；数据处理（数据处理中的银行卡中心、PUE值在1.5以上的云计算数据中心除外）；互联网信息服务。（企业依法自主选择经营项目，开展经营活动；互联网信息服务以及依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事本市产业政策禁止和限制类项目的经营活动。）</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//work-experience-->
 
-<figure id="eye_cristian_buda" class="eye">Cristian</figure>
-<strong class="tooltip">Cristian Buda<small>Development</small></strong>
-<strong class="name">Cristian</strong>
+	<!--skills-->
+	<div id="skills" class="skills">
+		<div class="container">
+			<h3 class="title">专业技能</h3>
+			<div class="skills-info">
+				<div class="col-md-6 bar-grids">
+					<h6>VUE <span> 87% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 87%">
+						</div>
+					</div>
+					<h6>LAYUIJS<span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>HTML/CSS<span>100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+					<h6>BOOSTARP <span> 100% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 100%">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 bar-grids">
+					<h6>ANGULAR<span> 90% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 90%">
+						</div>
+					</div>
+					<h6>JAVASCRIPT<span> 93% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 93%">
+						</div>
+					</div>
+					<h6>REACT NATIVE<span>60% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 60%">
+						</div>
+					</div>
+					<h6>GULP、WEBPACK<span> 70% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 70%">
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//education-->
+	<!--portfolio-->
+	<div id="projects" class="portfolio">
+		<div class="container">
+			<h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">部分作品</h3>
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+						<li class="resp-tab-item"><span>All</span></li>
+						<li class="resp-tab-item"><span>HTML/CSS/JAVASCRIPT</span></li>
+						<li class="resp-tab-item"><span> VUE</span></li>
+						<li class="resp-tab-item"><span>ANGULAR</span></li>
+						<li class="resp-tab-item"><span>REACT、REACT-NATIVE</span></li>
+					</ul>
+					<div class="clearfix"> </div>
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g1.jpg" class="swipebox" title="我的项目">
+											<img src="images/g1.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
 
-</li>
--->
-      <li>
-        <figure id="eye_cristian_cojita" class="eye">Cristian</figure>
-        <strong class="tooltip">Cristian Coji&#539;&#259;<small>Development</small></strong> <strong class="name">Cristian</strong> </li>
-      <li>
-        <figure id="eye_mesaros" class="eye">Cristian</figure>
-        <strong class="tooltip">Cristian Mesaros<small>Development</small></strong> <strong class="name">Cristian</strong> </li>
-      <li>
-        <figure id="eye_cristian_zdrobe" class="eye">Cristian</figure>
-        <strong class="tooltip">Cristian Zdrobe<small>Development</small></strong> <strong class="name">Cristian</strong> </li>
-      <li>
-        <figure id="eye_cristina_moldovan" class="eye">Cristina</figure>
-        <strong class="tooltip">Cristina Moldovan<small>QA</small></strong> <strong class="name">Cristina</strong> </li>
-      <li>
-        <figure id="eye_csaba_tekse" class="eye">Csaba</figure>
-        <strong class="tooltip">Csaba Tekse<small>Development</small></strong> <strong class="name">Csaba</strong> </li>
-      <!--
-<li>
+												<p>											<a target="_blank" style="color: #fff;" href="http://admin.jiaju120.com">
+													拓维云家居后台系统</a></p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid effect-sarah">
+										<a href="images/g2.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g2.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g3.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g3.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g4.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g4.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
 
-<figure id="eye_daniel_cosman" class="eye">Daniel</figure>
-<strong class="tooltip">Daniel Cosman<small>QA</small></strong>
-<strong class="name">Daniel</strong>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g11.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g11.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
 
-</li>
--->
-      <!-- <li>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g6.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g6.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g7.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g7.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g8.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g8.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g9.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g9.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g10.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g10.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
 
-<figure id="eye_daniel_zaremba" class="eye">Daniel</figure>
-<strong class="tooltip">Daniel Zaremba<small>Development</small></strong>
-<strong class="name">Daniel</strong>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
 
-</li> -->
-      <!-- 			<li>
 
-<figure id="eye_daria_petru" class="eye">Daria</figure>
-<strong class="tooltip">Daria Nadina Petru<small>Management</small></strong>
-<strong class="name">Daria</strong>
+										<a href="images/55.jpg" class="swipebox" title="红星美凯龙">
+											<img src="images/g5.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>											<a target="_blank" style="color: #fff;" href="http://hxjz.yueweiliandong.com">
+													红星美凯龙</a></p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g12.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g12.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
 
-</li> -->
-      <li>
-        <figure id="eye_dory_ciceu" class="eye">Doru</figure>
-        <strong class="tooltip">Doru Ciceu<small>Development</small></strong> <strong class="name">Doru</strong> </li>
-      <li>
-        <figure id="eye_dragos_bucevschi" class="eye">Drago&#537;</figure>
-        <strong class="tooltip">Drago&#537; Bucevschi<small>Development</small></strong> <strong class="name">Drago&#537;</strong> </li>
-      <li>
-        <figure id="eye_erika_lacatus" class="eye">Erika</figure>
-        <strong class="tooltip">Erika L&#259;c&#259;tu&#351;<small>QA</small></strong> <strong class="name">Erika</strong> </li>
-      <li>
-        <figure id="eye_filip_chereches" class="eye">Filip</figure>
-        <strong class="tooltip">Filip Chereche&#537;-To&#537;a<small>Leadership</small></strong> <strong class="name">Filip</strong> </li>
-      <li>
-        <figure id="eye_gabriel_lacatus" class="eye">Gabriel</figure>
-        <strong class="tooltip">Gabriel L&#259;c&#259;tu&#351;<small>Development</small></strong> <strong class="name">Gabriel</strong> </li>
-      <li>
-        <figure id="eye_ildiko_soos" class="eye">Ildikó</figure>
-        <strong class="tooltip">Ildikó Soós<small>Development</small></strong> <strong class="name">Ildikó</strong> </li>
-      <li>
-        <figure id="eye_istvan_takacss" class="eye">István</figure>
-        <strong class="tooltip">István Takács<small>Development</small></strong> <strong class="name">István</strong> </li>
-      <li>
-        <figure id="eye_jozsi" class="eye">Jozsi</figure>
-        <strong class="tooltip">József Gergely<small>Development</small></strong> <strong class="name">Jozsi</strong> </li>
-      <li>
-        <figure id="eye_lavinia_mendrea" class="eye">Lavinia</figure>
-        <strong class="tooltip">Lavinia Mendrea<small>Development</small></strong> <strong class="name">Lavinia</strong> </li>
-      <li>
-        <figure id="eye_levente_horvath" class="eye">Levente</figure>
-        <strong class="tooltip">Levente Horváth<small>Development</small></strong> <strong class="name">Levente</strong> </li>
-      <li>
-        <figure id="eye_liviu_pogar" class="eye">Liviu</figure>
-        <strong class="tooltip">Liviu Pogar<small>QA</small></strong> <strong class="name">Liviu</strong> </li>
-      <li>
-        <figure id="eye_marc" class="eye">Marc</figure>
-        <strong class="tooltip">Marc Abrudan<small>Development</small></strong> <strong class="name">Marc</strong> </li>
-      <li>
-        <figure id="eye_maximilian_marele" class="eye">Maximilian</figure>
-        <strong class="tooltip">Maximilian Marele<small>Design</small></strong> <strong class="name">Maximilian</strong> </li>
-      <li>
-        <figure id="eye_mihai_potcoava" class="eye">Mihai</figure>
-        <strong class="tooltip">Mihai Potcoav&#259;<small>Development</small></strong> <strong class="name">Mihai</strong> </li>
-      <li>
-        <figure id="eye_mihai_savu" class="eye">Mihai</figure>
-        <strong class="tooltip">Mihai Savu<small>Development</small></strong> <strong class="name">Mihai</strong> </li>
-      <li>
-        <figure id="eye_mircea_baicu" class="eye">Mircea</figure>
-        <strong class="tooltip">Mircea Baicu<small>Development</small></strong> <strong class="name">Mircea</strong> </li>
-      <li>
-        <figure id="eye_mircea_dragoi" class="eye">Mircea</figure>
-        <strong class="tooltip">Mircea Dr&#259;goi<small>Design</small></strong> <strong class="name">Mircea</strong> </li>
-      <li>
-        <figure id="eye_paul_abrudan" class="eye">Paul</figure>
-        <strong class="tooltip">Paul Abrudan<small>Development</small></strong> <strong class="name">Paul</strong> </li>
-      <li>
-        <figure id="eye_radu_lucaciu" class="eye">Radu</figure>
-        <strong class="tooltip">Radu Lucaciu<small>Development</small></strong> <strong class="name">Radu</strong> </li>
-      <li>
-        <figure id="eye_radu_pantea" class="eye">Radu</figure>
-        <strong class="tooltip">Radu Pantea<small>QA</small></strong> <strong class="name">Radu</strong> </li>
-      <li>
-        <figure id="eye_sebastian_morar" class="eye">Sebastian</figure>
-        <strong class="tooltip">Sebastian Morar<small>Development</small></strong> <strong class="name">Sebastian</strong> </li>
-      <li>
-        <figure id="eye_stefan_balan" class="eye">&#536;tefan</figure>
-        <strong class="tooltip">&#536;tefan B&#259;lan<small>Design</small></strong> <strong class="name">&#536;tefan</strong> </li>
-      <li>
-        <figure id="eye_tibor_fazakas" class="eye">Tibor</figure>
-        <strong class="tooltip">Tibor Fazakas<small>QA</small></strong> <strong class="name">Tibor</strong> </li>
-      <li>
-        <figure id="eye_timi" class="eye">Timi</figure>
-        <strong class="tooltip">Timi Fagadar<small>Development</small></strong> <strong class="name">Timi</strong> </li>
-      <li>
-        <figure id="eye_tudor_galanopulos" class="eye">Tudor</figure>
-        <strong class="tooltip">Tudor Galanopulos<small>Development</small></strong> <strong class="name">Tudor</strong> </li>
-      <li>
-        <figure id="eye_victor_stegaru" class="eye">Victor</figure>
-        <strong class="tooltip">Victor Stegaru<small>Development</small></strong> <strong class="name">Victor</strong> </li>
-      <li>
-        <figure id="eye_viorel_dram" class="eye">Viorel</figure>
-        <strong class="tooltip">Viorel Dram<small>Development</small></strong> <strong class="name">Viorel</strong> </li>
-      <li>
-        <figure id="eye_zsolt_borbely" class="eye">Zsolt</figure>
-        <strong class="tooltip">Zsolt Borbely<small>Development</small></strong> <strong class="name">Zsolt</strong> </li>
-      <li>
-        <figure id="eye_you" class="eye">You?</figure>
-        <strong class="tooltip"><a href="http://www.lanrenzhijia.com/">Join us!</a><small>We have great coffee!</small></strong> <strong class="name">You?</strong> </li>
-    </ul>
-  </div>
-</div>
+
+
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g5.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g5.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g6.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g6.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g7.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g7.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g3.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g3.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g1.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g1.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g9.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g9.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g2.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g2.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g4.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g4.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g8.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g8.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g10.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g10.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g11.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g11.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g12.jpg" class="swipebox" title="你好。请继续关注，后续会完善完整。">
+											<img src="images/g12.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>正在完善中。。。。。</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--ResponsiveTabs-->
+			<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$('#horizontalTab').easyResponsiveTabs({
+						type: 'default', //Types: default, vertical, accordion
+						width: 'auto', //auto or any width like 600px
+						fit: true   // 100% fit in a container
+					});
+				});
+			</script>
+			<!--//ResponsiveTabs-->
+			<!-- swipe box js -->
+			<script src="js/jquery.swipebox.min.js"></script>
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+			</script>
+			<!-- //swipe box js -->
+		</div>
+	</div>
+	<!--//portfolio-->
+	<!--education-->
+	<div id="education" class="education">
+		<div class="container">
+			<h3 class="title">教育背景</h3>
+			<div class="work-info">
+				<div class="col-md-6 work-left">
+					<h4>2010.09 - 2014.07  </h4>
+				</div>
+				<div class="col-md-6 work-right">
+					<!--<h5><span class="glyphicon glyphicon-education"> </span> 洛阳师范学院</h5>-->
+					<h5><span class="glyphicon glyphicon-education"> </span> 中国人民解放军陆军步兵学院</h5>
+					<!--<p>洛阳师范学院（Luoyang Normal University）是一所省属普通高等师范本科院校，位于千年帝都、牡丹花城、丝路起点——洛阳，为河南省文明单位、河南省普通高校毕业生就业工作先进单位、教育硕士专业学位研究生培养试点单位。 [1]-->
+						<!--学校的前身是始建于1916年的河洛师范学校，历经“河南省立河洛师范学校‘’、‘’河南省立第四师范学校‘’等发展阶段，2000年升格为本科院校，定为现名。2011年获批教育硕士专业学位研究生培养试点单位，2015年获批非全日制研究生招生资格。-->
+						<!--截至2018年9月，学校占地2850亩，建筑面积近71万平方米，固定资产总值约12.7亿元；有23个学院，2个公共教研部，71个本科专业，涵盖文学、理学、工学、经济学、管理学、法学、历史学、教育学、艺术学、农学等10大学科门类，有1个学科入选河南省优势特色学科建设工程，1个学科进入ESI世界排名前1%；现有教职工1700余人，全日制在校生30000余人，各类成人教育学生4100余人</p>-->
+				<p>中国人民解放军陆军步兵学院（The Army Infantry Academy of PLA）隶属于中国人民解放军陆军，是全军重点建设院校。2017年8月1日，在中国人民解放军建军90周年纪念日，陆军步兵学院在军旗升起的地方——“英雄城”南昌挂牌成立。 [1]  根据中央军委命令，陆军步兵学院主要承担陆军步兵初级指挥军官、合成营参谋军官、军事学研究生、外军初级指挥与参谋军官等的培养任务。 [1]
+					中国人民解放军陆军步兵学院历史底蕴厚重，素有“将军摇篮”的美誉 [2]  。2017年，中国人民解放军陆军步兵学院由南昌陆军学院（校本部）和石家庄机械化步兵学院（石家庄校区）合并组建而成。南昌陆军学院源于建军初期的中国工农红军学校 [3]  ，院内的邓小平旧居（小平楼）是全国重点文物保护单位 [4]  。石家庄机械化步兵学院的前身是1937年成立的晋察冀抗日军政干校和1958年成立的军委装甲兵学院。
+					中国人民解放军陆军步兵学院是全军26所面向普通高中毕业生招收学员的军校之一 [1]  ，先后9次参加国庆阅兵，毕业学员中已有200人成长为共和国将军</p>
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!--<div class="work-info"> -->
+			<!--<div class="col-md-6 work-right work-right2"> -->
+			<!--<h4>Diploma in Design - 2010</h4>-->
+			<!--</div>-->
+			<!--<div class="col-md-6 work-left work-left2"> -->
+			<!--<h5> University Name <span class="glyphicon glyphicon-education"></span></h5>-->
+			<!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>-->
+			<!--</div>-->
+			<!--<div class="clearfix"> </div>-->
+			<!--</div>-->
+			<!--<div class="work-info"> -->
+			<!--<div class="col-md-6 work-left"> -->
+			<!--<h4>Web Design - 2008</h4>-->
+			<!--</div>-->
+			<!--<div class="col-md-6 work-right"> -->
+			<!--<h5><span class="glyphicon glyphicon-education"> </span> University Name</h5>-->
+			<!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo </p>-->
+			<!--</div>-->
+			<!--<div class="clearfix"> </div>-->
+			<!--</div>-->
+		</div>
+	</div>
+	<!--//education-->
+	<!--about-->
+	<div id="about" class="about">
+		<div class="container">
+			<h3 class="title"> 关于我</h3>
+			<div class="col-md-8 about-left">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具有较强的用户研究、市场分析能力，根据用户体验去做产品，生活方式有丰富的认识和独特的见解;具有色彩、材质、表面处理的研究和趋势分析能力。对前端工作充满热情，有较强的开发能力，开发的产品范围广泛。</p>
+				<!--<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;熟悉服装制作的基础知识，懂得人体结构理论，对服装面料，辅料性质有足够的认识，精通服装制作过程及工艺、成本构成。熟悉服装企业的接单报价排单流程，生产排期流程，制作工艺流程，验货程序标准等。手绘功底深，工作积极性高，为人热情，乐于助人，沟通能力较强，拥有创新思维、有团队精神并能承受较大的工作压力。</p>-->
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拥有多年的前端工作经验，经过时间的积累和沉淀已经有了自己的开发设计产品技巧和风格，性格低调，比较细心，责任感强，有进取心，诚实可靠。有很强的团队合作意识和一定的领导能力，具有良好的开发能力,思维敏锐，学习能力、表达能力出众。</p>
+			</div>
+			<div class="col-md-4 about-right">
+				<ul>
+					<h5>荣誉证书</h5>
+					<li><span class="glyphicon glyphicon-menu-right" ></span> 中国人民解放军陆军步兵学院学历</li>
+					<!--<li><span class="glyphicon glyphicon-menu-right" ></span>  洛阳师范本科学历</li>-->
+					<!--<li><span class="glyphicon glyphicon-menu-right"></span> 郑州大学自考本科学历</li>-->
+					<!--<li><span class="glyphicon glyphicon-menu-right"></span> 高级UI设计师证书</li>-->
+					<!--<li><span class="glyphicon glyphicon-menu-right"></span> 千典公司品牌最佳设计师荣誉</li>-->
+					<!--<li><span class="glyphicon glyphicon-menu-right"></span> ..................................... </li>-->
+				</ul>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//about-->
+	<!--contact -->
+	<div class="welcome contact" id="contact">
+		<div class="container">
+			<h3 class="title">联系我</h3>
+			<div class="contact-row">
+				<div class="col-md-6 contact-left">
+					<iframe src="http://map.baidu.com/#panoid=09002200011706171137054909Z&panotype=street&heading=0&pitch=0&l=19&tn=B_NORMAL_MAP&sc=0&newmap=1&shareurl=1&pid=09002200011706171137054909Z"></iframe>
+				</div>
+				<div class="col-md-6 contact-right">
+					<div class="address-left">
+						<p>中国北京海淀区</p>
+					</div>
+					<div class="address-right">
+						<p>电话 : 16601116686</p>
+						<p>E-mail : <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=279364752@qq.com" target="_blank">279364752@qq.com</a></p>
+					</div>
+					<div class="clearfix"></div>
+					<div class="contact-form">
+						<form action="#" method="post">
+							<input type="text" name="Name" placeholder="Name" required="">
+							<input class="email" name="Email" type="text" placeholder="Email" required="">
+							<input class="phone" name="phone" type="text" placeholder="Phone" required="">
+							<textarea name="Message" placeholder="Message" required=""></textarea>
+							<input type="submit" value="提交" >
+						</form>
+					</div>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//contact -->
+	<!--footer-->
+	<div class="footer">
+		<div class="container"></div>
+		<div style="text-align: center;color: #fff"><span style="margin-right: 30px">CopyRight@copy2017 </span>  <a href="http://beian.miit.gov.cn" style="color: #fff" title="京ICP备16040055号">京ICP备16040055号</a></div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<script type='text/javascript'>
+        (function(m, ei, q, i, a, j, s) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            j = ei.createElement(q),
+                s = ei.getElementsByTagName(q)[0];
+            j.async = true;
+            j.charset = 'UTF-8';
+            j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+            s.parentNode.insertBefore(j, s);
+        })(window, document, 'script', '_MEIQIA');
+        _MEIQIA('entId', 151510);
+	</script>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
