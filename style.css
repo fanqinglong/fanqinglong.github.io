@@ -236,7 +236,7 @@ p {
 }
 .work-left2 h5 span.glyphicon {
     margin-left: 4em;
-    margin-right: -7.3em;
+    margin-right: -7em;
     z-index: 9;
 }
 .work-right.work-right2 {
@@ -752,7 +752,7 @@ h3.title {
 }
 .work-right h5 span.glyphicon {
     margin-right: 5em;
-    margin-left: -7em;
+    margin-left: -7.3em;
 }
 .work-info h5 {
     font-size: 1.2em;
