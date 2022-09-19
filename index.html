@@ -28,6 +28,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="./bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="./style.css" type="text/css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="./swipebox.css">
+    <link rel="stylesheet" href="./preview.css">
     <!--//Custom Theme files-->
     <!--js-->
     <script src="./jquery-1.11.1.min.js"></script>
@@ -39,6 +40,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--start-smooth-scrolling-->
     <script type="text/javascript" src="./move-top.js"></script>
     <script type="text/javascript" src="./easing.js"></script>
+    
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {
@@ -54,8 +56,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div id="home" class="banner">
     <div class="banner-info">
         <div class="container">
-            <div class="col-md-4 header-left">
-                <img src="./img1.jpg" alt=""/>
+            <div class="col-md-4 header-left zoomImgBox">
+                <img src="./img1.jpg" class="zoomImg" alt=""/>
             </div>
             <div class="col-md-8 header-right">
                 <h2>Hello</h2>
@@ -244,7 +246,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <li class="resp-tab-item"><span>REACT</span></li>
                 </ul>
                 <div class="clearfix"></div>
-                <div class="resp-tabs-container">
+                <div class="resp-tabs-container ">
                     <div class="tab-1 resp-tab-content">
                         <div class="tab_img">
                             <div class="col-md-4 portfolio-grids">
@@ -629,8 +631,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           href="http://beian.miit.gov.cn" style="color: #fff" title="京ICP备16040055号">京ICP备16040055号</a></div>
 </div>
 <!--//footer-->
-<!--smooth-scrolling-of-move-up-->
-<script type="text/javascript">
+
+<!-- 引入js -->
+<script src="./preview.js"></script>
+<script type='text/javascript'>
     $(document).ready(function () {
 
         var defaults = {
@@ -643,8 +647,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         $().UItoTop({easingType: 'easeOutQuart'});
 
     });
-</script>
-<script type='text/javascript'>
     (function (m, ei, q, i, a, j, s) {
         m[i] = m[i] || function () {
             (m[i].a = m[i].a || []).push(arguments)
@@ -657,11 +659,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         s.parentNode.insertBefore(j, s);
     })(window, document, 'script', '_MEIQIA');
     _MEIQIA('entId', 151510);
+
+    showZoomImg('.zoomImg', 'img');
 </script>
 <!--//smooth-scrolling-of-move-up-->
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="./bootstrap.js"></script>
+
 </body>
 </html>
